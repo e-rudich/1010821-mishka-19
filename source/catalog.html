@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог - Интернет-магазин вещей ручной работы «Мишка»</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo-image" src="" alt="Логотип Мишки" width="86" height="35">
+      </a>
+      <button class="page-header__menu-toggle" type="button">Меню</button>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-catalog">
+      <h1 class="page-catalog__header">Каталог товаров</h1>
+      <ul class="page-catalog__list catalog-item">
+        <li class="catalog-item__card catalog-card">
+          <article class="catalog-card__content card-content">
+            <a class="card-content__img-link" href="#">
+              <img class="card-content__img" src="" alt="Зайчик-попрыгайчик" width="260" height="195">
+            </a>
+            <a class="card-content__header-link" href="#">
+              <h2 class="card-content__header">Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="card-content__description">Рост 30 см, вес 200 г</p>
+            <p class="card-content__price">1200 руб.</p>
+            <button class="card-content__cart" type="button"><span class="visually-hidden">Положить в корзину</span></button>
+          </article>
+        </li>
+        <li class="catalog-item__card catalog-card">
+          <article class="catalog-card__content card-content">
+            <a class="card-content__img-link" href="#">
+              <img class="card-content__img" src="" alt="Корзинка для белья" width="260" height="195">
+            </a>
+            <a class="card-content__header-link" href="#">
+              <h2 class="card-content__header">Корзинка для белья</h2>
+            </a>
+            <p class="card-content__description">Диаметр 15 см, высота 10 см</p>
+            <p class="card-content__price">690 руб.</p>
+            <button class="card-content__cart" type="button"><span class="visually-hidden">Положить в корзину</span></button>
+          </article>
+        </li>
+        <li class="catalog-item__card catalog-card">
+          <article class="catalog-card__content card-content">
+            <a class="card-content__img-link" href="#">
+              <img class="card-content__img" src="" alt="Большая корзинка для игрушек" width="260" height="195">
+            </a>
+            <a class="card-content__header-link" href="#">
+              <h2 class="card-content__header">Большая корзинка для игрушек</h2>
+            </a>
+            <p class="card-content__description">Диаметр 30 см, высота 30 см</p>
+            <p class="card-content__price">1500 руб.</p>
+            <button class="card-content__cart" type="button"><span class="visually-hidden">Положить в корзину</span></button>
+          </article>
+        </li>
+      </ul>
+      <section class="item-modal">
+        <form class="item-modal__form modal-form" method="POST" action="https://echo.htmlacademy.ru">
+          <h2 class="modal-form__header">Добавить в корзину</h2>
+          <fieldset class="modal-form__filedset">
+            <legend class="modal-form__legend">Выберете размер</legend>
+            <ul class="modal-form__list">
+              <li class="modal-form__item">
+                <label class="modal-form__label">S
+                  <input class="modal-form__input" type="radio" name="size" value="S">
+                </label>
+              </li>
+              <li class="modal-form__item">
+                <label class="modal-form__label">M
+                  <input class="modal-form__input" type="radio" name="size" value="M">
+                </label>
+              </li>
+              <li class="modal-form__item">
+                <label class="modal-form__label">L
+                  <input class="modal-form__input" type="radio" name="size" value="L">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button modal-form__button" type="submit">Добавить</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="#"><span class="visually-hidden">Перейти в Инстаграм</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#"><span class="visually-hidden">Перейти на Фэйсбук</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#"><span class="visually-hidden">Перейти в твиттер</span></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__logo"></svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
