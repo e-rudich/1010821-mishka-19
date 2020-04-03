@@ -1,0 +1,17 @@
+.page-main {
+  width: $width-mobile;
+}
+
+.page-main__intro {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  min-height: 300px;
+}
+
+.page-main__intro-header {
+  font-size: 27px;
+  line-height: 30px;
+  color: $diesel;
+  text-align: center;
+}

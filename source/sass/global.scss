@@ -1,0 +1,27 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.category-list,
+.advantages-main__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 85px;
+  margin: 0 auto;
+  color: $greyish-brown;
+  border: 2px solid $greyish-brown;
+  background-color: $white;
+}

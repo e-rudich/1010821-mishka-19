@@ -1,0 +1,34 @@
+.item-main__header {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $black;
+}
+
+.item-main__type {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $downy;
+}
+
+.item-main__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $greyish-brown;
+}
+
+.item-main__characteristics {
+  font-size: 15px;
+  line-height: 20px;
+  color: $greyish-brown;
+}
+
+.item-main__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: $greyish-brown;
+}
