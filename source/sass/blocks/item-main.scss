@@ -12,20 +12,20 @@
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $downy;
+  color: $main-green;
   margin: 0;
 }
 
 .item-main__description {
   font-size: 15px;
   line-height: 24px;
-  color: $greyish-brown;
+  color: $text-color;
 }
 
 .item-main__characteristics {
   font-size: 15px;
   line-height: 20px;
-  color: $greyish-brown;
+  color: $text-color;
   margin-bottom: 28px;
 }
 
@@ -34,14 +34,14 @@
   line-height: 24px;
   font-weight: bold;
   text-align: center;
-  color: $greyish-brown;
+  color: $text-color;
 }
 
 .item-main__field,
 .item-main__value {
   display: inline-block;
   padding: 10px 0 10px 0;
-  border-bottom: 1px solid $silver;
+  border-bottom: 1px solid $grey;
 }
 
 .item-main__field {

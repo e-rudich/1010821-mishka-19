@@ -6,26 +6,6 @@
   @include header-size;
 }
 
-.review-content__text {
-  font-size: 15px;
-  line-height: 30px;
-  color: $greyish-brown;
-}
-
-.review-content__author {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.review-content__author-social {
-  font-size: 17px;
-  line-height: 30px;
-  color: $greyish-brown;
-  text-decoration: none;
-}
-
 .review-main__button {
   @include link-reset;
   padding: 20px 80px;

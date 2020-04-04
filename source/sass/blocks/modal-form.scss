@@ -1,5 +1,5 @@
 .modal-form {
-  border: 1px solid $silver;
+  border: 1px solid $grey;
   padding: 35px 30px;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
@@ -17,7 +17,7 @@
 .modal-form__legend {
   font-size: 15px;
   line-height: 30px;
-  color: $greyish-brown;
+  color: $text-color;
   text-align: center;
 }
 
@@ -28,7 +28,7 @@
 
 .modal-form__button {
   color: $white;
-  background-color: $downy;
+  background-color: $main-green;
   padding: 20px 82px;
   border: none;
 }

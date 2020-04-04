@@ -12,7 +12,7 @@
 .contacts-main__table {
   font-size: 15px;
   line-height: 30px;
-  color: $greyish-brown;
+  color: $text-color;
 }
 
 .contacts-main__field {
@@ -24,5 +24,5 @@
 }
 
 .contacts-main__value--email {
-  border-bottom: 1px solid $downy;
+  border-bottom: 1px solid $main-green;
 }

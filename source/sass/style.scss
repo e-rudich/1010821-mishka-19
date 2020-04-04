@@ -2,8 +2,8 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "global.scss";
 @import "blocks/visually-hidden.scss";
-@import "body.scss";
 @import "blocks/button.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user-list.scss";
@@ -16,6 +16,7 @@
 @import "blocks/item-main.scss";
 @import "blocks/advantages-main.scss";
 @import "blocks/review-main.scss";
+@import "blocks/review-content.scss";
 @import "blocks/contacts-main.scss";
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";
