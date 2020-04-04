@@ -1,0 +1,17 @@
+.page-catalog {
+  width: $width-mobile;
+}
+
+.page-catalog__header {
+  background-color: $seashell;
+  text-align: center;
+  padding: 75px 40px;
+
+  @include header-size;
+  font-size: 27px;
+}
+
+.page-catalog__list {
+  @include list-reset;
+  padding: 30px;
+}

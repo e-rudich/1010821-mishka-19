@@ -1,0 +1,31 @@
+.card-content__header-link {
+  @include link-reset;
+  color: $black;
+}
+
+.card-content__img {
+  display: block;
+}
+
+.card-content__header {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.card-content__wrapper {
+  padding-left: 28px;
+  border: 1px solid $silver;
+}
+
+.card-content__description {
+  font-size: 13px;
+  line-height: 30px;
+  color: $greyish-brown;
+}
+
+.card-content__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}

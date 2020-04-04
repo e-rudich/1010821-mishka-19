@@ -1,8 +1,10 @@
+.item-main {
+  padding: 0 30px;
+}
+
 .item-main__header {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
-  color: $black;
+  @include header-size;
+  margin-bottom: 8px;
 }
 
 .item-main__type {
@@ -11,6 +13,7 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $downy;
+  margin: 0;
 }
 
 .item-main__description {
@@ -23,6 +26,7 @@
   font-size: 15px;
   line-height: 20px;
   color: $greyish-brown;
+  margin-bottom: 28px;
 }
 
 .item-main__price {
@@ -31,4 +35,27 @@
   font-weight: bold;
   text-align: center;
   color: $greyish-brown;
+}
+
+.item-main__field,
+.item-main__value {
+  display: inline-block;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid $silver;
+}
+
+.item-main__field {
+  min-width: 95px;
+}
+
+.item-main__value {
+  min-width: 160px;
+}
+
+.item-main__img {
+  display: inline-block;
+}
+
+.item-main__button {
+  padding: 20px 85px;
 }

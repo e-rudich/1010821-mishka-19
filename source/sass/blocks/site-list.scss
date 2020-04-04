@@ -1,0 +1,17 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item {
+  box-shadow: 0 1px 0 0 $silver, inset 0 1px 0 0 $silver;
+  padding: 30px 0 30px 76px;
+}
+
+.site-list__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @include link-reset;
+  color: $black;
+}
