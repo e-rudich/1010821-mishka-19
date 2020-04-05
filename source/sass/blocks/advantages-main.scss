@@ -1,0 +1,17 @@
+.advantages-main {
+  padding: 0 30px;
+}
+
+.advantages-main__header {
+  @include header-size;
+}
+
+.advantages-main__list {
+  @include list-reset;
+}
+
+.advantages-main__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}

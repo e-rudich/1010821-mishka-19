@@ -1,0 +1,12 @@
+.review-main {
+  padding: 0 30px;
+}
+
+.review-main__header {
+  @include header-size;
+}
+
+.review-main__button {
+  @include link-reset;
+  padding: 20px 80px;
+}

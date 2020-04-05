@@ -1,0 +1,61 @@
+.item-main {
+  padding: 0 30px;
+}
+
+.item-main__header {
+  @include header-size;
+  margin-bottom: 8px;
+}
+
+.item-main__type {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $main-green;
+  margin: 0;
+}
+
+.item-main__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+.item-main__characteristics {
+  font-size: 15px;
+  line-height: 20px;
+  color: $text-color;
+  margin-bottom: 28px;
+}
+
+.item-main__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: $text-color;
+}
+
+.item-main__field,
+.item-main__value {
+  display: inline-block;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid $grey;
+}
+
+.item-main__field {
+  min-width: 95px;
+}
+
+.item-main__value {
+  min-width: 160px;
+}
+
+.item-main__img {
+  display: inline-block;
+}
+
+.item-main__button {
+  padding: 20px 85px;
+}

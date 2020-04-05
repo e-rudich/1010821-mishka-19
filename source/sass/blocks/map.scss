@@ -1,0 +1,9 @@
+.map__img {
+  margin-bottom: 20px;
+}
+
+.map__button {
+  @include link-reset;
+  padding: 20px 52px;
+  margin: 20px auto;
+}
