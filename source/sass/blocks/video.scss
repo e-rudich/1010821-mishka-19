@@ -12,19 +12,6 @@
   color: $black;
 }
 
-.video-container {
-  position: relative;
-}
-
-.video-container__play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  border: none;
-}
-
 .video__description {
   font-size: 13px;
   line-height: 24px;
