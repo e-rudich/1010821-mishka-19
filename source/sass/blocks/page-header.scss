@@ -1,8 +1,11 @@
 .page-header {
   width: $width-mobile;
   background-color: $white;
+
+  margin: 0 auto;
 }
 
-.page-header__logo-link {
-  margin: 0 auto;
+.page-header__logo-image {
+  display: block;
+  margin: 20px auto;
 }

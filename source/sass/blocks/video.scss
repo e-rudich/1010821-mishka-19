@@ -1,0 +1,50 @@
+.video__content {
+  border: 1px solid $grey;
+}
+
+.video__intro {
+  padding-left: 34px;
+}
+
+.video__header {
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+}
+
+.video__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: $text-color;
+  padding-left: 34px;
+}
+
+.video__button {
+  @include link-reset;
+  display: block;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 33px;
+  color: $text-color;
+  border: 2px solid $text-color;
+  background-color: $white;
+  max-width: 192px;
+  padding: 15px;
+}
