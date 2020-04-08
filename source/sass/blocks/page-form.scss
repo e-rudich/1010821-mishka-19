@@ -1,3 +1,21 @@
 .page-form {
   width: $width-mobile;
+  margin: 0 auto;
+}
+
+.page-form__header {
+  @include inner-page-header;
+}
+
+.page-form__description {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 30px;
+  margin: 30px 0;
+  color: $text-color;
+}
+
+.page-form__form {
+  padding: 0 30px;
+  margin: 30px 0;
 }

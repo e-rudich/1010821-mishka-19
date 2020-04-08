@@ -1,17 +1,14 @@
 .page-catalog {
   width: $width-mobile;
+  margin: 0 auto;
 }
 
 .page-catalog__header {
-  background-color: $grey-light;
-  text-align: center;
-  padding: 75px 40px;
-
-  @include header-size;
-  font-size: 27px;
+  @include inner-page-header;
 }
 
 .page-catalog__list {
   @include list-reset;
-  padding: 30px;
+  padding: 0 30px;
+  margin: 30px 0;
 }
