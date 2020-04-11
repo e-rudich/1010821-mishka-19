@@ -1,10 +1,70 @@
 .item-main {
   padding: 0 30px;
+
+  @media (min-width: $width-tablet) {
+    min-height: 554px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 750px;
+  }
+}
+
+.item-main__header-wrapper {
+  margin-top: 23px;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 42px;
+  }
+
+  @media (min-width: $width-desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.item-main__item-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $width-tablet) {
+    min-height: 404px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 566px;
+  }
+}
+
+.item-main__description-wrapper,
+.item-main__price-wrapper {
+  @media (min-width: $width-tablet) {
+    width: 292px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 175px;
+  }
 }
 
 .item-main__header {
   @include header-size;
+  margin: 0;
   margin-bottom: 8px;
+
+  @media (min-width: $width-tablet) {
+    @include header-size-tablet;
+  }
+
+  @media (min-width: $width-desktop) {
+    @include header-size-desktop;
+    order: 2;
+    z-index: 10;
+  }
 }
 
 .item-main__type {
@@ -14,6 +74,16 @@
   text-transform: uppercase;
   color: $main-green;
   margin: 0;
+
+  @media (min-width: $width-tablet) {
+    max-width: 70px;
+    text-align: center;
+  }
+
+  @media (min-width: $width-desktop) {
+    order: 1;
+    padding-right: 100px;
+  }
 }
 
 .item-main__description {
@@ -54,8 +124,27 @@
 
 .item-main__img {
   display: inline-block;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 525px;
+    height: 636px;
+  }
 }
 
 .item-main__button {
-  // padding: 20px 85px;
+  @media (min-width: $width-tablet) {
+    min-width: 292px;
+    margin-left: 0;
+  }
 }

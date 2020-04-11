@@ -1,3 +1,7 @@
 .catalog-card:not(:last-child) {
   margin-bottom: 30px;
+
+  @media (min-width: $width-desktop) {
+    margin-right: 52px;
+  }
 }

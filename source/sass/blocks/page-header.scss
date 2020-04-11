@@ -3,9 +3,14 @@
   background-color: $white;
 
   margin: 0 auto;
-}
+  position: relative;
 
-.page-header__logo-image {
-  display: block;
-  margin: 20px auto;
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    display: flex;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+  }
 }

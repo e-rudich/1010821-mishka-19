@@ -1,6 +1,14 @@
 .page-main {
   width: $width-mobile;
   margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+  }
 }
 
 .page-main__intro {
@@ -9,6 +17,15 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   min-height: 300px;
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    min-height: 746px;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
 }
 
 .page-main__intro-header {
@@ -22,4 +39,14 @@
   margin: 0 auto;
   color: $brown-dark;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

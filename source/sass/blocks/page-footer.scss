@@ -1,6 +1,35 @@
 .page-footer {
   width: $width-mobile;
   background-color: $grey-light;
-
   margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    padding: 51px 50px 58px 50px;
+  }
+}
+
+.page-footer__logo-link {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    width: 102px;
+    height: 34px;
+  }
 }

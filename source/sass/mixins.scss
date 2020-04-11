@@ -20,11 +20,41 @@
   font-weight: bold;
 }
 
+@mixin header-size-tablet {
+  font-size: 43px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+@mixin header-size-desktop {
+  font-size: 53px;
+  line-height: 57px;
+  font-weight: bold;
+}
+
 @mixin inner-page-header {
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
   background-color: $grey-light;
+  text-align: center;
+  padding: 75px 40px;
+}
+
+@mixin inner-page-header-tablet {
+  font-size: 43px;
+  line-height: 50px;
+  font-weight: bold;
+  background-color: $grey-light;
+  text-align: center;
+  padding: 75px 40px;
+}
+
+@mixin inner-page-header-desktop {
+  font-size: 53px;
+  line-height: 57px;
+  font-weight: bold;
+  // background-color: $grey-light;
   text-align: center;
   padding: 75px 40px;
 }

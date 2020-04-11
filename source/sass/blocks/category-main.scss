@@ -1,3 +1,7 @@
 .categoty-main {
   width: $width-mobile;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+  }
 }
