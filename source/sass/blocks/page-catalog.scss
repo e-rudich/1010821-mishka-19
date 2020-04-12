@@ -1,14 +1,5 @@
-.page-catalog {
-  width: $width-mobile;
-  margin: 0 auto;
-
-  @media (min-width: $width-tablet) {
-    width: $width-tablet;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: $width-desktop;
-  }
+.page-catalog__header-background {
+  background-color: $grey-light;
 }
 
 .page-catalog__header {

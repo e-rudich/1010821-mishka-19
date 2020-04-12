@@ -1,15 +1,5 @@
 .page-footer {
-  width: $width-mobile;
   background-color: $grey-light;
-  margin: 0 auto;
-
-  @media (min-width: $width-tablet) {
-    width: $width-tablet;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: $width-desktop;
-  }
 }
 
 .page-footer__wrapper {
