@@ -1,3 +1,16 @@
+.card-content {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-direction: column;
+  }
+}
+
 .card-content__header-link {
   @include link-reset;
   color: $black;
@@ -5,27 +18,62 @@
 
 .card-content__img {
   display: block;
+
+  @media (min-width: $width-tablet) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .card-content__header {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+  }
 }
 
 .card-content__wrapper {
   padding-left: 28px;
+  padding-right: 28px;
   border: 1px solid $grey;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 335px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 316px;
+  }
 }
 
 .card-content__description {
   font-size: 13px;
   line-height: 30px;
   color: $text-color;
+
+  @media (min-width: $width-tablet) {
+    font-size: 15px;
+  }
 }
 
 .card-content__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
+
+  @media (min-width: $width-tablet) {
+    font-size: 17px;
+  }
 }
