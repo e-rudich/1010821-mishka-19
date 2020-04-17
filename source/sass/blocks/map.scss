@@ -1,10 +1,21 @@
-.map__img {
-  margin-bottom: 20px;
+.map {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
 }
 
-.map__button {
-  @include link-reset;
-  // padding: 15px 20px;
-  margin: 0 auto 39px;
-  width: 260px;
+.map__img {
+  margin-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    height: 457px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 525px;
+    height: 457px;
+  }
 }

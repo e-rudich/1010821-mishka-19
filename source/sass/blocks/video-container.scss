@@ -1,5 +1,12 @@
 .video-container {
   position: relative;
+  margin: 0 auto;
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .video-container__play-button {

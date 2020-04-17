@@ -1,5 +1,22 @@
+.form {
+  margin-bottom: 50px;
+}
+
 .form__fieldset {
   @include fieldset-reset;
+}
+
+.form__fieldset-wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.form__input {
+  background-color: transparent;
 }
 
 .form__fieldset--tel,
@@ -7,8 +24,31 @@
   padding-bottom: 20px;
 }
 
+.form__fieldset--tel,
+.form__fieldset--email,
+.form__filedset--color {
+  @media (min-width: $width-tablet) {
+    background-color: $grey-light;
+  }
+}
+
 .form__list {
   @include list-reset;
+
+  @media (min-width: $width-tablet) {
+    width: 500px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 700px;
+  }
+}
+
+.form__list--color {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form__legend {
@@ -17,6 +57,10 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $main-green;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 120px;
+  }
 }
 
 .form__legend--type {
@@ -42,13 +86,23 @@
 
 .form__item {
   padding-bottom: 20px;
+
+  &--color {
+    @media (min-width: $width-tablet) {
+      width: 200px;
+    }
+  }
 }
 
 .form__label {
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+
+  @media (min-width: $width-tablet) {
+    font-size: 19px;
+  }
 }
 
 .form__label--type,
@@ -70,6 +124,14 @@
     line-height: 18px;
     color: rgba(68, 68, 68, 0.3);
   }
+
+  @media (min-width: $width-tablet) {
+    width: 500px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 700px;
+  }
 }
 
 .form__input--order-text {
@@ -83,10 +145,36 @@
     line-height: 18px;
     color: rgba(68, 68, 68, 0.3);
   }
+
+  @media (min-width: $width-tablet) {
+    width: 500px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 700px;
+  }
+}
+
+.form__submit-wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
 }
 
 .form__bottom-text {
   font-size: 14px;
   line-height: 16px;
   color: $text-color;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    order: 2;
+  }
+}
+
+.form__submit-button {
+  @media (min-width: $width-tablet) {
+    order: 1;
+    margin-left: 0;
+  }
 }

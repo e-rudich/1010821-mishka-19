@@ -17,12 +17,16 @@
 .page-form__description {
   font-size: 13px;
   line-height: 24px;
-  padding: 0 30px;
-  margin: 30px 0;
   color: $text-color;
+
+  @media (min-width: $width-tablet) {
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 650px;
+  }
 }
 
-.page-form__form {
-  padding: 0 30px;
-  margin: 30px 0;
-}
+// .page-form__form {
+//   padding: 0 30px;
+//   margin: 30px 0;
+// }

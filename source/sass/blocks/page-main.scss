@@ -4,10 +4,12 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   min-height: 300px;
+  background-clip: content-box;
 
   @media (min-width: $width-tablet) {
     background-image: url("../img/hero-tablet@1x.jpg");
     min-height: 746px;
+    background-clip: border-box;
   }
 
   @media (min-width: $width-desktop) {
