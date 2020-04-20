@@ -1,6 +1,7 @@
 .card-content {
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
@@ -55,6 +56,7 @@
 
   @media (min-width: $width-desktop) {
     width: 316px;
+    flex-grow: 1;
   }
 }
 

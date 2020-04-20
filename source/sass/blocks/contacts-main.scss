@@ -45,11 +45,13 @@
 
   @media (min-width: $width-tablet) {
     @include header-size-tablet;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   @media (min-width: $width-desktop) {
     @include header-size-desktop;
-    order: 2;
   }
 }
 
@@ -61,7 +63,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    order: 1;
+    order: -1;
   }
 }
 
@@ -72,7 +74,7 @@
 
   @media (min-width: $width-desktop) {
     width: 24%;
-    margin-left: 240px;
+    margin-left: 222px;
   }
 }
 

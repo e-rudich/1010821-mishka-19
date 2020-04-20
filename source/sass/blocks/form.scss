@@ -57,6 +57,8 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $main-green;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $width-tablet) {
     margin-right: 120px;

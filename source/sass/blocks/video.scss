@@ -65,7 +65,13 @@
   font-size: 13px;
   line-height: 24px;
   color: $text-color;
-  padding-left: 34px;
+  padding: 20px 5px 20px 34px;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .video-container__video-preview {

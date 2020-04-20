@@ -3,6 +3,8 @@
 
   @media (min-width: $width-tablet) {
     min-height: 470px;
+    box-sizing: border-box;
+    padding: 0 50px;
   }
 
   @media (min-width: $width-desktop) {
@@ -24,20 +26,6 @@
     justify-content: flex-start;
   }
 }
-
-// .item-main__item-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-
-//   @media (min-width: $width-tablet) {
-//     min-height: 404px;
-//   }
-
-//   @media (min-width: $width-desktop) {
-//     min-height: 566px;
-//   }
-// }
 
 .item-main__description-wrapper,
 .item-main__price-wrapper {
@@ -100,6 +88,11 @@
   font-size: 15px;
   line-height: 24px;
   color: $text-color;
+
+  @media (min-width: $width-tablet) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .item-main__characteristics {

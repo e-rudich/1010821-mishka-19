@@ -1,7 +1,6 @@
-.categoty-main {
-  width: $width-mobile;
-
+.category-main {
   @media (min-width: $width-tablet) {
-    width: $width-tablet;
+    padding: 0 50px;
+    margin: 0 auto;
   }
 }

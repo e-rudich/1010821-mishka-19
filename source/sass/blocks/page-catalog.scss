@@ -15,15 +15,6 @@
 }
 
 .page-catalog__list {
-  @include list-reset;
-  padding: 0 30px;
-  margin: 30px 0;
-
-  @media (min-width: $width-tablet) {
-    padding: 0 52px;
-  }
-
-  @media (min-width: $width-tablet) {
-    padding: 0 49px;
-  }
+  list-style: none;
+  box-sizing: border-box;
 }

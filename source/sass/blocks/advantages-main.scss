@@ -3,7 +3,8 @@
   margin-bottom: 60px;
 
   @media (min-width: $width-desktop) {
-    padding-left: 225px;
+    padding-left: 180px;
+    box-sizing: border-box;
   }
 }
 
