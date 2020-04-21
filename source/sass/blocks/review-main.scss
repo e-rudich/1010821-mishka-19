@@ -1,10 +1,8 @@
 .review-main {
-  padding: 0 30px;
   box-sizing: border-box;
-}
 
-.review-main__wrapper {
   @media (min-width: $width-tablet) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     min-height: 457px;
@@ -12,11 +10,13 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 350px 457px;
-    padding: 30px 0 0 70px;
+    padding-top: 85px;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 30px 0 0 170px;
+    padding-top: 75px;
+    padding-left: 175px;
+    background-position: 50px 0;
   }
 }
 
@@ -26,8 +26,8 @@
   @media (min-width: $width-tablet) {
     @include header-size-tablet;
     margin: 0;
-    flex-grow: 1;
     order: 1;
+    flex-grow: 1;
   }
 
   @media (min-width: $width-desktop) {
@@ -50,15 +50,20 @@
   }
 }
 
-.review-main__author {
+.review-main__review-nav {
+  display: flex;
+  margin: 20px 0;
+
   @media (min-width: $width-tablet) {
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
     order: 4;
-    flex-grow: 1;
   }
 }
 
-.review-main__review-nav {
-  @media (min-width: $width-tablet) {
-    order: 5;
-  }
+.review-main__nav-button {
+  width: 130px;
+  height: 50px;
+  flex-grow: 1;
 }

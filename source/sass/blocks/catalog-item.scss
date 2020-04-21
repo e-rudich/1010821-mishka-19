@@ -1,4 +1,8 @@
 .catalog-item {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $width-desktop) {
+    width: 1150px;
+  }
 }

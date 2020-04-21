@@ -52,11 +52,11 @@
     justify-content: space-between;
     box-sizing: border-box;
     width: 335px;
+    flex-grow: 1;
   }
 
   @media (min-width: $width-desktop) {
     width: 316px;
-    flex-grow: 1;
   }
 }
 

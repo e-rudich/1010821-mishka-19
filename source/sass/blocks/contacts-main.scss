@@ -25,6 +25,7 @@
 
 .contacts-main__wrapper {
   margin-bottom: 20px;
+  box-sizing: border-box;
 
   @media (min-width: $width-desktop) {
     position: relative;

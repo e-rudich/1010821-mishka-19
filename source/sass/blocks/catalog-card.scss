@@ -1,10 +1,13 @@
 .catalog-card {
   margin-bottom: 30px;
+  width: 100%;
+
+  @media (min-width: $width-desktop) {
+    width: 316px;
+  }
 }
 
 .catalog-card:not(:nth-child(3n+3)) {
-  margin-right: 10px;
-
   @media (min-width: $width-desktop) {
     margin-right: 50px;
   }

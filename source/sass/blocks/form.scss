@@ -9,9 +9,14 @@
 .form__fieldset-wrapper {
   @media (min-width: $width-tablet) {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 175px;
   }
 }
 
@@ -24,9 +29,7 @@
   padding-bottom: 20px;
 }
 
-.form__fieldset--tel,
-.form__fieldset--email,
-.form__filedset--color {
+.form__filedset--bg {
   @media (min-width: $width-tablet) {
     background-color: $grey-light;
   }
@@ -59,6 +62,7 @@
   color: $main-green;
   margin-top: 0;
   margin-bottom: 0;
+  white-space: nowrap;
 
   @media (min-width: $width-tablet) {
     margin-right: 120px;
@@ -157,11 +161,11 @@
   }
 }
 
-.form__submit-wrapper {
-  @media (min-width: $width-tablet) {
-    display: flex;
-  }
-}
+// .form__submit-wrapper {
+//   @media (min-width: $width-tablet) {
+//     display: flex;
+//   }
+// }
 
 .form__bottom-text {
   font-size: 14px;
