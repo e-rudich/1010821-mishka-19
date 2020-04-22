@@ -35,11 +35,15 @@
 }
 
 .main-nav__list {
-  display: none;
+  display: block;
 
   @media (min-width: $width-tablet) {
     display: flex;
   }
+}
+
+.main-nav__list--hide {
+  display: none;
 }
 
 .main-nav__delivery {

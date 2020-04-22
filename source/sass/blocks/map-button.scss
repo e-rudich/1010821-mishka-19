@@ -1,0 +1,10 @@
+.map-button {
+  @include link-reset;
+  margin: 0 auto 39px;
+  width: 260px;
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    margin-left: 260px;
+  }
+}
