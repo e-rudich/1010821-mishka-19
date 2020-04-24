@@ -4,6 +4,7 @@
 
 .page-catalog__header {
   @include inner-page-header;
+  margin: 0;
 
   @media (min-width: $width-tablet) {
     @include inner-page-header-tablet;
@@ -18,4 +19,12 @@
   list-style: none;
   box-sizing: border-box;
   margin-top: 30px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 90px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 138px;
+  }
 }

@@ -35,9 +35,12 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 5px;
 
   @media (min-width: $width-tablet) {
     font-size: 20px;
+    margin-top: 25px;
   }
 }
 
@@ -45,6 +48,10 @@
   padding-left: 28px;
   padding-right: 28px;
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 $black-10;
+  }
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -64,18 +71,44 @@
   font-size: 13px;
   line-height: 30px;
   color: $text-color;
+  margin-top: 0;
+  margin-bottom: 18px;
 
   @media (min-width: $width-tablet) {
     font-size: 15px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 14px;
+  }
+}
+
+.card-content__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 0 12px;
+  border-top: 1px solid #ececec;
+  margin-bottom: 14px;
 }
 
 .card-content__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
+  margin: 0;
 
   @media (min-width: $width-tablet) {
     font-size: 17px;
+    padding-left: 3px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 0;
+  }
+}
+
+.card-content__cart {
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }

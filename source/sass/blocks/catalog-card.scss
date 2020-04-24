@@ -2,6 +2,10 @@
   margin-bottom: 30px;
   width: 100%;
 
+  @media (min-width: $width-tablet) {
+    margin-bottom: 54px;
+  }
+
   @media (min-width: $width-desktop) {
     width: 316px;
   }
