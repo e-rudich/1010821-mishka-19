@@ -197,24 +197,21 @@
 
       <section class="item-modal">
         <form class="item-modal__form modal-form" method="POST" action="https://echo.htmlacademy.ru">
-          <h2 class="modal-form__header">Добавить в корзину</h2>
+          <h2 class="modal-form__header">Добавить в&nbsp;корзину</h2>
           <fieldset class="modal-form__filedset">
             <legend class="modal-form__legend">Выберите размер</legend>
             <ul class="modal-form__list">
               <li class="modal-form__item">
-                <label class="modal-form__label">S
-                  <input class="modal-form__input" type="radio" name="size" value="S">
-                </label>
+                <input id="small" class="modal-form__input visually-hidden" type="radio" name="size" value="S" checked>
+                <label for="small" class="modal-form__label">S</label>
               </li>
               <li class="modal-form__item">
-                <label class="modal-form__label">M
-                  <input class="modal-form__input" type="radio" name="size" value="M">
-                </label>
+                <input id="middle" class="modal-form__input visually-hidden" type="radio" name="size" value="M">
+                <label for="middle" class="modal-form__label">M</label>
               </li>
               <li class="modal-form__item">
-                <label class="modal-form__label">L
-                  <input class="modal-form__input" type="radio" name="size" value="L">
-                </label>
+                <input id="large" class="modal-form__input visually-hidden" type="radio" name="size" value="L">
+                <label for="large" class="modal-form__label">L</label>
               </li>
             </ul>
           </fieldset>

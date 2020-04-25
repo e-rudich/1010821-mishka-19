@@ -47,11 +47,7 @@
 .card-content__wrapper {
   padding-left: 28px;
   padding-right: 28px;
-  border: 1px solid #ececec;
-
-  &:hover {
-    box-shadow: 0 6px 10px 0 $black-10;
-  }
+  border: 1px solid $border-color;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -87,7 +83,7 @@
   display: flex;
   justify-content: space-between;
   padding: 21px 0 12px;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid $border-color;
   margin-bottom: 14px;
 }
 

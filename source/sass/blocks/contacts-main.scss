@@ -6,14 +6,14 @@
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-size: 100% 6px;
+  background-size: auto 6px;
   background-position: 0 0;
 
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-size: 100% 15px;
+    background-size: auto 15px;
   }
 
   @media (min-width: $width-desktop) {
@@ -127,13 +127,16 @@
 }
 
 .contacts-main__field {
-  min-width: 78px;
+  min-width: 73px;
 }
 
 .contacts-main__value {
   min-width: 182px;
 }
 
-.contacts-main__value--email {
-  border-bottom: 1px solid $main-green;
+.contacts-main__email {
+  @include link-reset;
+  color: $text-color;
+  padding-bottom: 3px;
+  box-shadow: 0 1px 0 0 $main-green;
 }

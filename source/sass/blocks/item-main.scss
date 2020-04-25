@@ -33,12 +33,13 @@
 .item-main__description-wrapper,
 .item-main__price-wrapper {
   @media (min-width: $width-tablet) {
-    width: 292px;
+    width: 43%;
     float: left;
   }
 
   @media (min-width: $width-desktop) {
     padding-left: 175px;
+    width: 28%;
   }
 }
 

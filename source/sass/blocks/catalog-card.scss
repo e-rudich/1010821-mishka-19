@@ -2,6 +2,10 @@
   margin-bottom: 30px;
   width: 100%;
 
+  &:hover .card-content__wrapper {
+    box-shadow: 0 6px 10px 0 $black-10;
+  }
+
   @media (min-width: $width-tablet) {
     margin-bottom: 54px;
   }
