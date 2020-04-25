@@ -1,8 +1,6 @@
 .advantages-main {
   padding: 47px 30px 0 30px;
   margin-bottom: 25px;
-  position: relative;
-
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
@@ -17,8 +15,9 @@
     padding-left: 180px;
     padding-top: 95px;
     box-sizing: border-box;
-    background-size: 100% 23px;
-    background-position: 0 55px;
+    background-size: 1050px 23px;
+    background-position: 50px 55px;
+    background-repeat: no-repeat;
   }
 }
 
