@@ -4,11 +4,15 @@
   @media (min-width: $width-tablet) {
     display: flex;
   }
+
+  @media (min-width: $width-desktop) {
+    max-width: $width-desktop;
+    margin: 0 auto;
+  }
 }
 
 .category-list__item {
   background-color: $main-green;
-  padding: 30px 0 30px 9%;
   flex-grow: 1;
 }
 
@@ -24,4 +28,18 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
+  padding: 25px 78% 30px 9%;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  @media (min-width: $width-tablet) {
+    line-height: 30px;
+    padding: 29px 70% 30px 11%;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 29px 76% 30px 7%;
+  }
 }

@@ -1,10 +1,23 @@
 .advantages-main {
-  padding: 0 30px;
-  margin-bottom: 60px;
+  padding: 47px 30px 0 30px;
+  margin-bottom: 25px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+  background-position: 0 35px;
+
+  @media (min-width: $width-tablet) {
+    background-size: auto 15px;
+    background-position: 0 18px;
+  }
 
   @media (min-width: $width-desktop) {
     padding-left: 180px;
+    padding-top: 95px;
     box-sizing: border-box;
+    background-size: 1050px 23px;
+    background-position: 50px 55px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -13,10 +26,16 @@
 
   @media (min-width: $width-tablet) {
     @include header-size-tablet;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 670px;
   }
 
   @media (min-width: $width-desktop) {
     @include header-size-desktop;
+    margin-left: 41px;
+    margin-bottom: 37px;
+    max-width: 850px;
   }
 }
 
@@ -27,6 +46,14 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding-left: 3px;
+    margin: 0 auto;
+    max-width: 670px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 0;
+    max-width: 850px;
   }
 }
 
@@ -36,18 +63,44 @@
   font-weight: bold;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 
   @media (min-width: $width-tablet) {
     width: 300px;
     font-size: 20px;
     line-height: 22px;
-    margin-right: 25px;
+    margin-right: 34px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $width-desktop) {
     width: 350px;
-    margin-right: 40px;
+    margin-right: 0;
   }
+}
+
+.advantages-main__icon--eco {
+  padding: 11px 0 17px 8px;
+}
+
+.advantages-main__icon--style {
+  padding-bottom: 26px;
+}
+
+.advantages-main__icon--like {
+  padding: 5px 0 20px 8px;
+}
+
+.advantages-main__icon--knit {
+  padding: 2px 0 17px 3px;
+}
+
+.advantages-main__icon--locals {
+  padding: 3px 0 27px 0;
+}
+
+.advantages-main__icon--wrapping {
+  padding: 0 0 20px 3px;
 }
 
 .advantages-main__item--eco {
@@ -59,6 +112,7 @@
 .advantages-main__item--knit {
   @media (min-width: $width-tablet) {
     order: 2;
+    padding-top: 13px;
   }
 }
 

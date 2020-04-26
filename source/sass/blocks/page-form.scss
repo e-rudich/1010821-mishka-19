@@ -4,6 +4,7 @@
 
 .page-form__header {
   @include inner-page-header;
+  margin: 0;
 
   @media (min-width: $width-tablet) {
     @include inner-page-header-tablet;

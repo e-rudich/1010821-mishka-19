@@ -12,15 +12,19 @@
 .main-nav__logo-image {
   display: block;
   margin: 20px auto;
+  padding-top: 2px;
+  padding-right: 4px;
 }
 
 .main-nav__logo-link {
   @media (min-width: $width-tablet) {
     order: 1;
+    padding-left: 50px;
   }
 
   @media (min-width: $width-desktop) {
     order: 2;
+    padding-left: 0;
   }
 }
 
@@ -42,10 +46,6 @@
   }
 }
 
-.main-nav__list--hide {
-  display: none;
-}
-
 .main-nav__delivery {
   display: none;
 
@@ -55,5 +55,13 @@
     line-height: 24px;
     color: $text-color;
     order: 5;
+    margin-top: 0;
+    padding-right: 50px;
+  }
+}
+
+.main-nav__menu-toggle--no-js {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }

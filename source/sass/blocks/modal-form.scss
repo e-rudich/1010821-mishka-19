@@ -1,7 +1,7 @@
 .modal-form {
   box-sizing: border-box;
   border: 1px solid $grey;
-  padding: 35px 30px;
+  padding: 30px 30px;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   max-width: 320px;
   margin: 0 auto;
@@ -15,6 +15,14 @@
   @include header-size;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 17px;
+  }
 }
 
 .modal-form__filedset {
@@ -26,16 +34,62 @@
   line-height: 30px;
   color: $text-color;
   text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 17px;
+    margin-bottom: 22px;
+  }
+}
+
+.modal-form__label {
+  display: block;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 16px;
+  color: $text-color;
+  font-weight: bold;
+  position: relative;
+  margin-right: 7px;
+  border: 2px solid $text-color-10;
+  background: transparent;
+  height: 50px;
+  width: 82px;
+  text-align: center;
+  padding-top: 15px;
+
+  &:hover {
+    border: 2px solid $text-color;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 112px;
+  }
 }
 
 .modal-form__list {
   @include list-reset;
   display: flex;
+  margin-bottom: 33px;
+
+  @media (min-width: $width-tablet) {
+    width: 350px;
+    margin: 0 auto 33px;
+  }
+}
+
+.modal-form__input:checked + .modal-form__label {
+  border: 2px solid $main-green;
 }
 
 .modal-form__button {
   color: $white;
   background-color: $main-green;
-  padding: 20px 82px;
+  padding: 15px 82px;
   border: none;
+  margin-bottom: 17px;
+
+  @media (min-width: $width-tablet) {
+    min-width: 350px;
+  }
 }

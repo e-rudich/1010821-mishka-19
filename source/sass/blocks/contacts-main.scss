@@ -1,15 +1,23 @@
 .contacts-main {
   padding: 0 30px;
+  padding-top: 23px;
   margin-bottom: 30px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+  background-position: 0 0;
 
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-size: auto 15px;
   }
 
   @media (min-width: $width-desktop) {
     display: block;
+    padding-top: 97px;
+    background-size: 100% 23px;
   }
 }
 
@@ -17,6 +25,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 10px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 24px;
+  }
 
   @media (min-width: $width-desktop) {
     width: 45%;
@@ -49,10 +62,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: 55px 23px 3px 15px;
   }
 
   @media (min-width: $width-desktop) {
     @include header-size-desktop;
+    margin-top: 70px;
+    margin-right: 33px;
   }
 }
 
@@ -61,10 +77,13 @@
 
   @media (min-width: $width-tablet) {
     display: block;
+    margin-top: -15px;
   }
 
   @media (min-width: $width-desktop) {
     order: -1;
+    margin-top: -8px;
+    margin-left: 18px;
   }
 }
 
@@ -72,6 +91,11 @@
   font-size: 15px;
   line-height: 30px;
   color: $text-color;
+
+  @media (min-width: $width-tablet) {
+    font-size: 17px;
+    margin-left: 15px;
+  }
 
   @media (min-width: $width-desktop) {
     width: 24%;
@@ -97,19 +121,20 @@
 
 .contacts-main__field,
 .contacts-main__value {
-  @media (min-width: $width-tablet) {
-    vertical-align: top;
-  }
+  vertical-align: top;
 }
 
 .contacts-main__field {
-  min-width: 78px;
+  min-width: 73px;
 }
 
 .contacts-main__value {
   min-width: 182px;
 }
 
-.contacts-main__value--email {
-  border-bottom: 1px solid $main-green;
+.contacts-main__email {
+  @include link-reset;
+  color: $text-color;
+  padding-bottom: 3px;
+  box-shadow: 0 1px 0 0 $main-green;
 }

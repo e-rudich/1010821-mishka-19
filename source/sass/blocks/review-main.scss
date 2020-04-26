@@ -1,46 +1,59 @@
 .review-main {
   box-sizing: border-box;
+  margin-bottom: 45px;
 
   @media (min-width: $width-tablet) {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    min-height: 457px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 350px 457px;
-    padding-top: 85px;
+    padding-top: 75px;
+    padding-bottom: 15px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $width-desktop) {
     padding-top: 75px;
     padding-left: 175px;
+    padding-bottom: 65px;
     background-position: 50px 0;
+    margin-bottom: 65px;
   }
 }
 
 .review-main__header {
   @include header-size;
+  margin-bottom: 24px;
 
   @media (min-width: $width-tablet) {
     @include header-size-tablet;
     margin: 0;
     order: 1;
     flex-grow: 1;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $width-desktop) {
     @include header-size-desktop;
+    margin-left: 45px;
   }
 }
 
 .review-main__button {
   @include link-reset;
+  padding: 10px;
 
   @media (min-width: $width-tablet) {
     order: 2;
     align-self: flex-start;
+    width: 175px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 7px;
   }
 }
 
@@ -48,22 +61,55 @@
   @media (min-width: $width-tablet) {
     order: 3;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 50px;
+  }
+}
+
+.review-main__author {
+  margin-top: 25px;
+  margin-bottom: 30px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 58px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 37px;
+  }
 }
 
 .review-main__review-nav {
   display: flex;
-  margin: 20px 0;
+  margin: 20px 0 40px;
 
   @media (min-width: $width-tablet) {
     position: absolute;
-    bottom: 70px;
+    bottom: 6px;
     right: 50px;
     order: 4;
+  }
+
+  @media (min-width: $width-desktop) {
+    bottom: 55px;
+    right: 51px;
   }
 }
 
 .review-main__nav-button {
-  width: 130px;
+  width: 87px;
   height: 50px;
+  padding: 0;
   flex-grow: 1;
+  background-color: transparent;
+  border: 1px solid $border-color;
+
+  &:first-child {
+    border-right: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    border: none;
+  }
 }
