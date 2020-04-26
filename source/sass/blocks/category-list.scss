@@ -28,14 +28,18 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
-  padding: 25px 0 30px 9%;
+  padding: 25px 78% 30px 9%;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   @media (min-width: $width-tablet) {
     line-height: 30px;
-    padding: 29px 0 30px 11%;
+    padding: 29px 70% 30px 11%;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 29px 0 30px 7%;
+    padding: 29px 76% 30px 7%;
   }
 }

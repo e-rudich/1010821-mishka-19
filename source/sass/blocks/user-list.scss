@@ -49,3 +49,15 @@
     display: none;
   }
 }
+
+.user-list--closed {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.user-list--no-js {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}

@@ -46,10 +46,6 @@
   }
 }
 
-.main-nav__list--hide {
-  display: none;
-}
-
 .main-nav__delivery {
   display: none;
 
@@ -61,5 +57,11 @@
     order: 5;
     margin-top: 0;
     padding-right: 50px;
+  }
+}
+
+.main-nav__menu-toggle--no-js {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }

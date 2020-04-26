@@ -55,3 +55,16 @@
     font-size: 17px;
   }
 }
+
+
+.site-list--closed {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.site-list--no-js {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
