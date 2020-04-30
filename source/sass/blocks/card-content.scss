@@ -15,6 +15,15 @@
 .card-content__header-link {
   @include link-reset;
   color: $black;
+
+  &:hover,
+  &:focus {
+    color: $black-60;
+  }
+
+  &:active {
+    color: $black-30;
+  }
 }
 
 .card-content__img {

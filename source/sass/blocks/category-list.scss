@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    max-width: $width-desktop;
+    max-width: 1050px;
     margin: 0 auto;
   }
 }
@@ -14,10 +14,24 @@
 .category-list__item {
   background-color: $main-green;
   flex-grow: 1;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $main-green-hover;
+    margin-top: -5px;
+  }
 }
 
 .category-list__item--dark {
   background-color: $main-green-dark;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $main-green-dark-hover;
+    margin-top: -5px;
+  }
 }
 
 .category-list__link {
