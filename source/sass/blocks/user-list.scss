@@ -70,14 +70,14 @@
   }
 }
 
-.user-list__icon-search {
+.user-list__icon--search {
   @media (min-width: $width-tablet) {
     top: 9px;
     left: -43px;
   }
 }
 
-.user-list__icon-cart {
+.user-list__icon--cart {
   @media (min-width: $width-tablet) {
     left: -52px;
   }

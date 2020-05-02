@@ -11,7 +11,7 @@
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
-    width: 668px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -30,6 +30,7 @@
 
   @media (min-width: $width-tablet) {
     order: 3;
+    width: 100%;
   }
 
   @media (min-width: $width-desktop) {
@@ -62,6 +63,7 @@
 .video__item {
   @media (min-width: $width-tablet) {
     order: 1;
+    width: 100%;
   }
 }
 
@@ -127,8 +129,8 @@
   display: block;
 
   @media (min-width: $width-tablet) {
-    width: 668px;
-    height: 455px;
+    width: 100%;
+    height: auto;
   }
 
   @media (min-width: $width-desktop) {
@@ -145,7 +147,7 @@
   width: 192px;
 
   @media (min-width: $width-tablet) {
-    width: 584px;
+    width: 87%;
     margin-bottom: 47px;
   }
 

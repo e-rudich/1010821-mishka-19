@@ -1,4 +1,4 @@
-var menuToggle = document.querySelector(".main-nav__menu-toggle");
+var menuToggle = document.querySelector(".main-nav__menu-opened");
 var siteList = document.querySelector(".site-list");
 var userList = document.querySelector(".user-list");
 
@@ -7,12 +7,12 @@ userList.classList.remove('user-list--no-js');
 menuToggle.classList.remove('main-nav__menu-toggle--no-js');
 
 menuToggle.addEventListener("click", function () {
-    if (menuToggle.classList.contains('main-nav__menu-toggle--burger')) {
-      menuToggle.classList.remove('main-nav__menu-toggle--burger');
-      menuToggle.classList.add('main-nav__menu-toggle--cross');
+    if (menuToggle.classList.contains('main-nav__menu-opened')) {
+      menuToggle.classList.remove('main-nav__menu-opened');
+      menuToggle.classList.add('main-nav__menu-closed');
     } else {
-      menuToggle.classList.add('main-nav__menu-toggle--burger');
-      menuToggle.classList.remove('main-nav__menu-toggle--cross');
+      menuToggle.classList.add('main-nav__menu-opened');
+      menuToggle.classList.remove('main-nav__menu-closed');
     }
 
     if (siteList.classList.contains('site-list--closed')) {

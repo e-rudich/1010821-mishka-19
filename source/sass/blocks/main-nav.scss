@@ -37,14 +37,11 @@
   }
 }
 
-.main-nav__menu-toggle {
+.main-nav__menu-opened {
   border: none;
   background-color: transparent;
   width: 75px;
   height: 40px;
-}
-
-.main-nav__menu-toggle--burger {
   position: absolute;
   top: 0;
   right: 0;
@@ -65,7 +62,11 @@
   }
 }
 
-.main-nav__menu-toggle--cross {
+.main-nav__menu-closed {
+  border: none;
+  background-color: transparent;
+  width: 75px;
+  height: 40px;
   position: absolute;
   top: 6px;
   right: 2px;
@@ -96,7 +97,6 @@
     display: none;
   }
 }
-
 
 .main-nav__list {
   display: block;
