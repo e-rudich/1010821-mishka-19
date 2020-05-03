@@ -51,10 +51,10 @@
     position: absolute;
     width: 20px;
     height: 2px;
-    background-color: #221f1f;
+    background-color: $menu-btn-color;
     left: 24px;
     top: 12px;
-    box-shadow: 0 6px 0 0 #221f1f, 0 12px 0 0 #221f1f;
+    box-shadow: 0 6px 0 0 $menu-btn-color, 0 12px 0 0 $menu-btn-color;
   }
 
   @media (min-width: $width-tablet) {
@@ -76,7 +76,7 @@
     position: absolute;
     width: 25px;
     height: 2px;
-    background-color: #221f1f;
+    background-color: $menu-btn-color;
     left: 24px;
     top: 12px;
     transform: rotate(45deg);
@@ -87,7 +87,7 @@
     position: absolute;
     width: 25px;
     height: 2px;
-    background-color: #221f1f;
+    background-color: $menu-btn-color;
     left: 24px;
     top: 12px;
     transform: rotate(-45deg);
