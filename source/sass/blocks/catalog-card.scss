@@ -5,16 +5,10 @@
   &:hover .card-content__wrapper,
   &:focus .card-content__wrapper {
     box-shadow: 0 6px 10px 0 $black-10;
-    z-index: -1;
   }
 
   &:active .card-content__wrapper {
     box-shadow: 0 3px 5px 0 $black-10;
-    z-index: -1;
-  }
-
-  @media (min-width: $width-tablet) {
-    margin-bottom: 54px;
   }
 
   @media (min-width: $width-desktop) {
