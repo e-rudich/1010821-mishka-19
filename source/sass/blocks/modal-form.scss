@@ -65,6 +65,7 @@
 
   &:hover {
     border: 2px solid $text-color;
+    cursor: pointer;
   }
 
   @media (min-width: $width-tablet) {

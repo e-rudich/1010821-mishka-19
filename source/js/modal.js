@@ -16,3 +16,11 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+modal.addEventListener("click", function (evt) {
+  if (evt.target === modal) {
+    if (modal.classList.contains("item-modal--show")) {
+      modal.classList.remove("item-modal--show");
+    }
+  }
+});
