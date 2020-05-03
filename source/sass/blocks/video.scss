@@ -65,6 +65,10 @@
     order: 1;
     width: 100%;
   }
+
+  @media (min-width: $width-desktop) {
+    width: 682px;
+  }
 }
 
 .video__header {
