@@ -11,8 +11,13 @@
     box-shadow: 0 3px 5px 0 $black-10;
   }
 
+  @media (min-width: $width-tablet) {
+    margin-bottom: 54px;
+  }
+
   @media (min-width: $width-desktop) {
     width: 316px;
+    margin-bottom: 57px;
   }
 }
 

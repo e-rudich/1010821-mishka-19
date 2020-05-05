@@ -162,6 +162,9 @@
 }
 
 .item-main__button {
+  @include link-reset;
+  padding: 9px 20px;
+
   @media (min-width: $width-tablet) {
     min-width: 290px;
     margin-left: 0;

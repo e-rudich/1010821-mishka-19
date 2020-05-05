@@ -13,11 +13,6 @@
 
 .category-list__item {
   flex-grow: 1;
-  background-color: $main-green-hover;
-}
-
-.category-list__item--dark {
-  background-color: $main-green-dark;
 }
 
 .category-list__link {
@@ -34,17 +29,18 @@
   &:hover,
   &:focus,
   &:active {
-    transform: translateY(-5px);
+    transform: translateY(0);
     background-color: $main-green-hover;
   }
 
   @media (min-width: $width-tablet) {
     line-height: 30px;
-    padding: 29px 70% 30px 11%;
+    padding: 29px 70% 35px 11%;
+    transform: translateY(5px);
   }
 
   @media (min-width: $width-desktop) {
-    padding: 29px 76% 30px 7%;
+    padding: 29px 76% 35px 7%;
   }
 }
 
@@ -54,7 +50,6 @@
   &:hover,
   &:focus,
   &:active {
-    transform: translateY(-5px);
     background-color: $main-green-dark-hover;
   }
 }
