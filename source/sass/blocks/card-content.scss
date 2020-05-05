@@ -120,8 +120,17 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  fill: $menu-btn-color;
+  opacity: 0.2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
+    opacity: 1;
+    fill: $main-green;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

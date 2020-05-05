@@ -13,6 +13,11 @@
 
 .category-list__item {
   flex-grow: 1;
+  background-color: $main-green-hover;
+}
+
+.category-list__item--dark {
+  background-color: $main-green-dark;
 }
 
 .category-list__link {

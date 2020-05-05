@@ -48,25 +48,24 @@
     color: $black-30;
   }
 
+  &:hover > .page-footer__copyright-logo,
+  &:focus > .page-footer__copyright-logo {
+    fill: $main-green-dark-hover;
+  }
+
+  &:active > .page-footer__copyright-logo {
+    fill: $main-green-dark-hover-30;
+  }
+
   @media (min-width: $width-tablet) {
     padding: 0;
     padding-top: 10px;
   }
 }
 
-.page-footer__copyright-logo,
-.page-footer__copyright-link:hover svg {
+.page-footer__copyright-logo {
   width: 27px;
   height: 34px;
   padding-left: 30px;
   fill: $main-green;
-
-  &:hover,
-  &:focus {
-    fill: $main-green-dark-hover;
-  }
-
-  &:active {
-    fill: $main-green-dark-hover-30;
-  }
 }
