@@ -12,3 +12,9 @@
     max-width: $width-desktop;
   }
 }
+
+.wrapper--footer {
+  @media (min-width: $width-desktop) {
+    max-width: 1050px;
+  }
+}
