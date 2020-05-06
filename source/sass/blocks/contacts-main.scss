@@ -4,14 +4,14 @@
   margin-bottom: 35px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-size: auto 6px;
+  background-size: 320px 6px;
   background-position: 0 0;
 
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-size: auto 15px;
+    background-size: 768px 15px;
     margin-bottom: 52px;
   }
 

@@ -31,6 +31,7 @@
   &:active {
     transform: translateY(0);
     background-color: $main-green-hover;
+    transition: 0.35s transform;
   }
 
   @media (min-width: $width-tablet) {
