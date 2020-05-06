@@ -6,10 +6,17 @@ $black: #000000;
 $black-60: rgba(0, 0, 0, 0.6);
 $black-30: rgba(0, 0, 0, 0.3);
 $black-10: rgba(0, 0, 0, 0.1);
+$menu-btn-color: #221f1f;
 $brown-dark: #010000;
 $main-green: #63d1bb;
+$main-green-input: #62d1ba;
+$main-green-hover: #59d5bc;
 $main-green-dark: #56c3b2;
+$main-green-dark-hover: #46c1ae;
+$main-green-dark-hover-30: rgba(70, 193, 174, 0.3);
+$main-green-dark-hover-10: rgba(70, 193, 174, 0.1);
 $text-color: #444444;
+$text-color-30: rgba(68, 68, 68, 0.3);
 $text-color-10: rgba(68, 68, 68, 0.1);
 $grey-light: #f1f1f1;
 $grey: #c6c6c6;
@@ -20,6 +27,7 @@ $width-mobile: 320px;
 $width-tablet: 768px;
 $width-desktop: 1150px;
 $mobile-width-only: 767px;
+$tablet-width-only: 1149px;
 
 // Шрифты
 $default-font: "Open Sans", "Arial", sans-serif;

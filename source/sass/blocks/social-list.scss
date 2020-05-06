@@ -1,13 +1,36 @@
 .social-list {
   @include list-reset;
   display: flex;
-  padding: 30px 0;
+  flex-wrap: wrap;
+  padding: 15px 40px 20px;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $width-tablet) {
     padding: 0;
+    margin-top: 7px;
+    border: none;
   }
 }
 
 .social-list__item {
-  margin: 0 20px;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.social-list__link {
+  @include link-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &:hover svg,
+  &:focus svg {
+    fill: $main-green-dark-hover;
+  }
+
+  &:active svg {
+    fill: $main-green-dark-hover-30;
+  }
 }

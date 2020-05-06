@@ -28,4 +28,13 @@
   font-weight: bold;
   color: $black;
   white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    color: $black-60;
+  }
+
+  &:active {
+    color: $black-30;
+  }
 }

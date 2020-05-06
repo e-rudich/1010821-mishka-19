@@ -2,6 +2,7 @@
   @include link-reset;
   margin: 0 auto 39px;
   width: 260px;
+  padding: 10px;
 
   @media (min-width: $width-tablet) {
     width: 230px;
@@ -9,6 +10,7 @@
 
   @media (min-width: $width-desktop) {
     margin: 0;
-    margin-left: 260px;
+    margin-left: 175px;
+    margin-top: 23px;
   }
 }

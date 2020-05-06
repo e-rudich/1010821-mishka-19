@@ -15,6 +15,19 @@
 .card-content__header-link {
   @include link-reset;
   color: $black;
+
+  &:hover,
+  &:focus {
+    color: $black-60;
+  }
+
+  &:active {
+    color: $black-30;
+  }
+}
+
+.card-content__img-link {
+  z-index: 20;
 }
 
 .card-content__img {
@@ -84,7 +97,7 @@
   justify-content: space-between;
   padding: 21px 0 12px;
   border-top: 1px solid $border-color;
-  margin-bottom: 14px;
+  margin-bottom: 9px;
 }
 
 .card-content__price {
@@ -104,7 +117,21 @@
 }
 
 .card-content__cart {
+  display: inline-block;
   background-color: transparent;
   border: none;
   padding: 0;
+  fill: $menu-btn-color;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 1;
+    fill: $main-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

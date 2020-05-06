@@ -1,4 +1,10 @@
 .map {
+  margin-bottom: 40px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 53px;
+  }
+
   @media (min-width: $width-desktop) {
     position: absolute;
     top: 97px;
@@ -7,7 +13,7 @@
 }
 
 .map__img {
-  margin-bottom: 20px;
+  display: block;
 
   @media (min-width: $width-tablet) {
     width: 100%;

@@ -16,12 +16,15 @@
 
   @media (min-width: $width-tablet) {
     box-shadow: none;
-    padding: 28px 50px 30px 76px;
+    padding: 28px 50px 30px 83px;
+    border-left: 1px solid $border-color;
   }
+}
 
-  @media (min-width: $width-desktop) {
-    box-shadow: none;
-    padding: 28px 52px 30px 76px;
+.user-list__item--search {
+  @media (min-width: $width-tablet) {
+    padding-left: 77px;
+    padding-right: 5px;
   }
 }
 
@@ -31,6 +34,9 @@
   font-weight: bold;
   color: $black;
   white-space: nowrap;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 
   @include link-reset;
 
@@ -42,9 +48,45 @@
   &:active {
     color: $black-30;
   }
+
+  &:hover > .user-list__icon,
+  &:focus > .user-list__icon {
+    fill: $main-green;
+    opacity: 1;
+  }
+
+  &:active > .user-list__icon {
+    opacity: 0.3;
+  }
 }
 
-.user-list__link--search {
+.user-list__link--icon-cart,
+.user-list__link--icon-search {
+  position: relative;
+}
+
+.user-list__icon {
+  position: absolute;
+  top: 2px;
+  left: -45px;
+  fill: $black;
+  opacity: 0.2;
+}
+
+.user-list__icon--search {
+  @media (min-width: $width-tablet) {
+    top: 9px;
+    left: -43px;
+  }
+}
+
+.user-list__icon--cart {
+  @media (min-width: $width-tablet) {
+    left: -52px;
+  }
+}
+
+.user-list__text {
   @media (min-width: $width-tablet) {
     display: none;
   }

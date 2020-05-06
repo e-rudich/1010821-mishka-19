@@ -1,7 +1,7 @@
 .contacts-main {
   padding: 0 30px;
   padding-top: 23px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background-size: auto 15px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $width-desktop) {
@@ -40,6 +41,10 @@
   margin-bottom: 20px;
   box-sizing: border-box;
 
+  @media (min-width: $width-tablet) {
+    margin-bottom: 55px;
+  }
+
   @media (min-width: $width-desktop) {
     position: relative;
     min-height: 457px;
@@ -48,7 +53,7 @@
     justify-content: space-between;
     width: $width-desktop;
     padding: 0 50px;
-    margin: 0 auto 20px;
+    margin: 0 auto 102px;
   }
 }
 
@@ -56,6 +61,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  margin-bottom: 14px;
 
   @media (min-width: $width-tablet) {
     @include header-size-tablet;
@@ -98,8 +104,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 24%;
-    margin-left: 222px;
+    width: 31%;
+    margin-left: 140px;
   }
 }
 
@@ -125,16 +131,34 @@
 }
 
 .contacts-main__field {
-  min-width: 73px;
+  min-width: 71px;
+
+  &:first-child {
+    padding-bottom: 27px;
+  }
 }
 
 .contacts-main__value {
   min-width: 182px;
+
+  &:first-child {
+    padding-bottom: 27px;
+  }
 }
 
 .contacts-main__email {
   @include link-reset;
   color: $text-color;
   padding-bottom: 3px;
-  box-shadow: 0 1px 0 0 $main-green;
+  box-shadow: 0 1px 0 0 $main-green-dark-hover;
+
+  &:hover,
+  &:focus {
+    color: $main-green-dark-hover;
+  }
+
+  &:active {
+    color: $main-green-dark-hover-30;
+    box-shadow: 0 1px 0 0 $main-green-dark-hover-10;
+  }
 }

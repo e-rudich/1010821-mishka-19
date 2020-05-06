@@ -1,4 +1,12 @@
 .catalog-video {
   box-sizing: border-box;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 100px;
+  }
 }
