@@ -8,6 +8,7 @@
 
   @media (min-width: $width-desktop) {
     order: 1;
+    padding-left: 13px;
   }
 }
 
@@ -20,7 +21,7 @@
 
   @media (min-width: $width-desktop) {
     &:first-child {
-      margin-right: 30px;
+      border-right: 1px solid $border-color;
     }
   }
 }
@@ -55,7 +56,7 @@
 
   @media (min-width: $width-desktop) {
     font-size: 17px;
-    padding: 23px 0 25px 29px;
+    padding: 32px 25px 32px 35px;
     width: 160px;
   }
 }
