@@ -434,15 +434,20 @@
 }
 
 .form__input-text--contacts {
+  box-sizing: border-box;
+  padding-right: 40px;
+
   @media (min-width: $width-tablet) {
-    width: 72.5%;
+    width: 75.5%;
     margin-left: auto;
     padding-left: 18px;
+    padding-right: 55px;
   }
 
   @media (min-width: $width-desktop) {
-    width: 68.5%;
+    width: 70.25%;
     margin-left: 0;
+    padding-right: 40px;
   }
 }
 
