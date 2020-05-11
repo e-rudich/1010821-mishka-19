@@ -45,7 +45,7 @@
 
 .item-main__description-wrapper {
   @media (min-width: $width-tablet) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
     margin-top: -50px;
   }
 
@@ -113,7 +113,7 @@
   font-size: 15px;
   line-height: 20px;
   color: $text-color;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .item-main__price {
@@ -133,8 +133,12 @@
 .item-main__field,
 .item-main__value {
   display: inline-block;
-  padding: 10px 0 7px 0;
+  padding: 10px 0 9px 0;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $width-tablet) {
+    padding: 10px 0 7px 0;
+  }
 }
 
 .item-main__field {

@@ -29,6 +29,8 @@
   <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
   <!-- // Pixel Glass -->
   <script src="js/picturefill-min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
   </head>
   <body>
     <header class="page-header">
@@ -53,14 +55,14 @@
           <ul class="main-nav__list user-list user-list--closed user-list--no-js">
             <li class="user-list__item user-list__item--search">
               <a class="user-list__link user-list__link--icon-search" href="#">
-                <svg class="user-list__icon user-list__icon--search" width="17.6" height="17.6">
+                <svg class="user-list__icon user-list__icon--search" width="18" height="18">
                   <use xlink:href="img/sprite.svg#search"></use>
                 </svg>
                 <span class="user-list__text">Поиск по сайту</span></a>
             </li>
             <li class="user-list__item">
               <a class="user-list__link user-list__link--icon-cart" href="#">
-                <svg class="user-list__icon user-list__icon--cart" width="20.294" height="18.849">
+                <svg class="user-list__icon user-list__icon--cart" width="20" height="19">
                   <use xlink:href="img/sprite.svg#cart"></use>
                 </svg>
                 Корзина: пока пуста</a>
@@ -89,15 +91,17 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category-main__list category-list">
           <li class="category-list__item">
-            <a class="category-list__link" href="#">Предметы интерьера
+            <a class="category-list__link" href="#">
+              <p class="category-list__link-content">Предметы интерьера</p>
               <svg class="category-list__icon" width="40" height="62">
                 <use xlink:href="img/sprite.svg#interior"></use>
               </svg>
             </a>
           </li>
           <li class="category-list__item category-list__item--dark">
-            <a class="category-list__link category-list__link--dark" href="#">Детские игрушки
-              <svg class="category-list__icon category-list__icon--toy" width="60" height="59.62">
+            <a class="category-list__link category-list__link--dark" href="#">
+              <p class="category-list__link-content">Детские игрушки</p>
+              <svg class="category-list__icon category-list__icon--toy" width="60" height="60">
                 <use xlink:href="img/sprite.svg#toys"></use>
               </svg>
             </a>
@@ -144,37 +148,37 @@
         <h2 class="advantages-main__header">Коротко о нас:</h2>
         <ul class="advantages-main__list">
           <li class="advantages-main__item advantages-main__item--eco">
-            <svg class="advantages-main__icon--eco" width="31.972" height="37.301">
+            <svg class="advantages-main__icon-eco" width="32" height="37">
               <use xlink:href="img/sprite.svg#eco"></use>
             </svg>
             Экологически чистые&nbsp;материалы
           </li>
           <li class="advantages-main__item advantages-main__item--style">
-            <svg class="advantages-main__icon--style" width="46.575" height="27.332">
+            <svg class="advantages-main__icon-style" width="47" height="27">
               <use xlink:href="img/sprite.svg#style"></use>
             </svg>
             Скандинавский стиль по&nbsp;российской цене
           </li>
           <li class="advantages-main__item advantages-main__item--like">
-            <svg class="advantages-main__icon--like" width="33.05" height="27.857">
+            <svg class="advantages-main__icon-like" width="33" height="28">
               <use xlink:href="img/sprite.svg#like"></use>
             </svg>
             Увеличивает лайки на&nbsp;фотографиях
           </li>
           <li class="advantages-main__item advantages-main__item--knit">
-            <svg class="advantages-main__icon--knit" width="34.373" height="34.373">
+            <svg class="advantages-main__icon-knit" width="34" height="34">
               <use xlink:href="img/sprite.svg#knit"></use>
             </svg>
             Связано вручную с любовью&nbsp;и&nbsp;умилением
           </li>
           <li class="advantages-main__item advantages-main__item--locals">
-            <svg class="advantages-main__icon--locals" width="54.156" height="23.183">
+            <svg class="advantages-main__icon-locals" width="54" height="23">
               <use xlink:href="img/sprite.svg#locals"></use>
             </svg>
             Поддержка отечественного производителя
           </li>
           <li class="advantages-main__item advantages-main__item--wrapping">
-            <svg class="advantages-main__icon--wrapping" width="32.666" height="32.486">
+            <svg class="advantages-main__icon-wrapping" width="33" height="32">
               <use xlink:href="img/sprite.svg#wrap"></use>
             </svg>
             Поставляется в подарочной&nbsp;упаковке
@@ -185,7 +189,7 @@
       <section class="wrapper review-main">
         <h2 class="review-main__header">Отзывы</h2>
         <article class="review-main__content review-content">
-          <p class="review-content__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="review-content__text">Я молодая мама, но всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
           <div class="review-main__author author-content">
             <p class="review-content__author">Анастасия Красильникова</p>
             <a class="review-content__author-social" href="#">@misssssiskras</a>
@@ -194,13 +198,13 @@
         <div class="review-main__review-nav">
           <button class="review-main__nav-button review-main__nav-button--prev" type="button">
             <span class="visually-hidden">Назад</span>
-            <svg width="50" height="26.003">
+            <svg width="50" height="26">
               <use xlink:href="img/sprite.svg#arrow-prev"></use>
             </svg>
           </button>
           <button class="review-main__nav-button review-main__nav-button--next" type="button">
             <span class="visually-hidden">Вперед</span>
-            <svg width="50" height="26.003">
+            <svg width="50" height="26">
               <use xlink:href="img/sprite.svg#arrow-next"></use>
             </svg>
           </button>
@@ -214,7 +218,7 @@
         <section class="contacts-main">
           <div class="contacts-main__header-wrapper">
             <h2 class="contacts-main__header">Контакты
-              <svg class="contacts-main__icon" width="46.68" height="81.691">
+              <svg class="contacts-main__icon" width="47" height="82">
                 <use xlink:href="img/sprite.svg#flag"></use>
               </svg>
             </h2>
@@ -271,7 +275,7 @@
       <div class="wrapper wrapper--footer">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo-link">
-            <svg class="page-footer__logo-image" width="101.615" height="34.056">
+            <svg class="page-footer__logo-image" width="102" height="34">
               <use xlink:href="img/sprite.svg#footer-logo"></use>
             </svg>
           </a>
@@ -279,7 +283,7 @@
             <li class="social-list__item">
               <a class="social-list__link" href="#">
                 <span class="visually-hidden">Перейти в Инстаграм</span>
-                <svg width="21.769" height="21.334">
+                <svg width="22" height="22">
                   <use xlink:href="img/sprite.svg#instagram"></use>
                 </svg>
               </a>
@@ -287,7 +291,7 @@
             <li class="social-list__item">
               <a class="social-list__link" href="#">
                 <span class="visually-hidden">Перейти на Фэйсбук</span>
-                <svg width="14.962" height="27.718">
+                <svg width="15" height="28">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
               </a>
@@ -295,14 +299,14 @@
             <li class="social-list__item">
               <a class="social-list__link" href="#">
                 <span class="visually-hidden">Перейти в твиттер</span>
-                <svg width="23.494" height="20.168">
+                <svg width="23" height="20">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
           </ul>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-            <svg class="page-footer__copyright-logo" width="26.943" height="34.09">
+            <svg class="page-footer__copyright-logo" width="27" height="34">
               <use xlink:href="img/sprite.svg#academy-logo"></use>
             </svg>
           </a>

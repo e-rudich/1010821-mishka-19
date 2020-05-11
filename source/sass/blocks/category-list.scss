@@ -20,6 +20,8 @@
 }
 
 .category-list__link {
+  box-sizing: border-box;
+  height: 100%;
   background-color: $main-green;
   display: flex;
   align-items: center;
@@ -67,6 +69,11 @@
   &:active {
     background-color: $main-green-dark-hover;
   }
+}
+
+.category-list__link-content {
+  margin: 0;
+  width: 175px;
 }
 
 .category-list__icon {

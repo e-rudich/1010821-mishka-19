@@ -18,6 +18,7 @@
     background-size: 1050px 23px;
     background-position: 50px 55px;
     background-repeat: no-repeat;
+    margin-bottom: 30px;
   }
 }
 
@@ -77,30 +78,31 @@
   @media (min-width: $width-desktop) {
     width: 350px;
     margin-right: 0;
+    padding-bottom: 57px;
   }
 }
 
-.advantages-main__icon--eco {
+.advantages-main__icon-eco {
   padding: 11px 0 17px 8px;
 }
 
-.advantages-main__icon--style {
+.advantages-main__icon-style {
   padding-bottom: 26px;
 }
 
-.advantages-main__icon--like {
+.advantages-main__icon-like {
   padding: 5px 0 20px 8px;
 }
 
-.advantages-main__icon--knit {
+.advantages-main__icon-knit {
   padding: 2px 0 17px 3px;
 }
 
-.advantages-main__icon--locals {
+.advantages-main__icon-locals {
   padding: 3px 0 27px 0;
 }
 
-.advantages-main__icon--wrapping {
+.advantages-main__icon-wrapping {
   padding: 0 0 20px 3px;
 }
 
