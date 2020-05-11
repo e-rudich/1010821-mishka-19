@@ -129,20 +129,6 @@
   }
 }
 
-.video-container__video-preview {
-  display: block;
-
-  @media (min-width: $width-tablet) {
-    width: 100%;
-    height: auto;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 682px;
-    height: 455px;
-  }
-}
-
 .video__button {
   @include link-reset;
   font-size: 17px;

@@ -22,6 +22,7 @@
 
 .map__img {
   display: block;
+  background-color: $map-color;
 
   @media (min-width: $width-desktop) {
     width: 525px;
