@@ -3,7 +3,7 @@
 .form {
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
 
   @media (min-width: $width-tablet) {
     padding-left: 0;
@@ -420,6 +420,13 @@
     border-color: $main-green-input;
   }
 
+  &:hover + .form__input-icon,
+  &:focus + .form__input-icon,
+  &:active + .form__input-icon {
+    fill: $main-green-input;
+    opacity: 1;
+  }
+
   @media (min-width: $width-tablet) {
     font-size: 19px;
     padding: 10px 5px 14px 18px;
@@ -427,21 +434,63 @@
 }
 
 .form__input-text--contacts {
+  box-sizing: border-box;
+  padding-right: 40px;
+
   @media (min-width: $width-tablet) {
-    width: 72.5%;
+    width: 75.5%;
     margin-left: auto;
     padding-left: 18px;
+    padding-right: 55px;
   }
 
   @media (min-width: $width-desktop) {
-    width: 68.5%;
+    width: 70.25%;
     margin-left: 0;
+    padding-right: 40px;
   }
 }
 
 .form__input-text--tel {
   &::placeholder {
     font-size: 19px;
+  }
+}
+
+.form__fieldset-wrapper--tel,
+.form__fieldset-wrapper--email {
+  position: relative;
+}
+
+.form__input-icon {
+  position: absolute;
+  right: 8px;
+  bottom: 18px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.2;
+
+  @media (min-width: $width-tablet) {
+    right: 75px;
+  }
+
+  @media (min-width: $width-desktop) {
+    right: 205px;
+  }
+
+  &--email {
+    width: 32px;
+    height: 32px;
+    right: 4px;
+    bottom: 8px;
+
+    @media (min-width: $width-tablet) {
+      right: 70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      right: 200px;
+    }
   }
 }
 

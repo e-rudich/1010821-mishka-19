@@ -1,5 +1,6 @@
 .map {
   margin-bottom: 40px;
+  position: relative;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 53px;
@@ -12,8 +13,16 @@
   }
 }
 
+.map__api {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+}
+
 .map__img {
   display: block;
+  background-color: $map-color;
 
   @media (min-width: $width-desktop) {
     width: 525px;

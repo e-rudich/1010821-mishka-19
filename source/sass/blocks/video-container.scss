@@ -9,6 +9,21 @@
   }
 }
 
+.video-container__video-preview {
+  display: block;
+  background-color: $grey-light;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 682px;
+    height: 455px;
+  }
+}
+
 .video-container__play-button {
   position: absolute;
   top: calc(50% - 40px);

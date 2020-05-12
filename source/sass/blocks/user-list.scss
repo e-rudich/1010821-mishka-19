@@ -77,7 +77,7 @@
 
 .user-list__icon {
   position: absolute;
-  top: calc(50% - 8px);
+  top: calc(50% - 7px);
   left: 0;
   fill: $black;
   opacity: 0.2;
@@ -97,6 +97,7 @@
 .user-list__icon--cart {
   @media (min-width: $width-tablet) {
     left: 33px;
+    top: calc(50% - 9px);
   }
 }
 

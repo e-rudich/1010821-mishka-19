@@ -1,6 +1,6 @@
 .contacts-main {
   padding: 0 30px;
-  padding-top: 23px;
+  padding-top: 25px;
   margin-bottom: 35px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
@@ -13,11 +13,12 @@
     justify-content: space-between;
     background-size: 768px 15px;
     margin-bottom: 52px;
+    background-position: 0 3px;
   }
 
   @media (min-width: $width-desktop) {
     display: block;
-    padding-top: 97px;
+    padding-top: 95px;
     background-size: 100% 23px;
   }
 }
