@@ -298,6 +298,8 @@
 
 .form__label--radio,
 .form__label--checkbox {
+  outline: none;
+
   &:hover {
     cursor: pointer;
   }
