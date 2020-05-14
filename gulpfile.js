@@ -14,7 +14,8 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
-var minify = require("gulp-minify");
+var jsmin = require("gulp-jsmin");
+var concat = require("gulp-concat");
 var del = require("del");
 
 gulp.task("css", function () {
@@ -25,6 +26,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -33,7 +35,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/icons/icon-*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))
@@ -65,26 +67,32 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("compress", async function() {
-  gulp.src("source/js/**/*.js")
-    .pipe(minify())
-    .pipe(gulp.dest("build/js"))
+gulp.task("clean", function () {
+  return del("build");
 });
 
 gulp.task("copy", function () {
   return gulp.src([
-    'source/fonts/**/*.{woff,woff2}',
-    'source/img/**',
-    'source/js/**',
-    'source/*.ico',
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/*.ico",
   ], {
     base: "source"
   })
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("clean", function () {
-  return del("build");
+gulp.task("jsmin", async function () {
+  gulp.src("source/js/**/*.js")
+      .pipe(jsmin())
+      .pipe(rename({suffix: ".min"}))
+      .pipe(gulp.dest("source/jsmin"));
+});
+
+gulp.task("scripts", function() {
+  return gulp.src("source/jsmin/**/*.js", "!source/jsmin/api.min.js")
+  .pipe(concat("main.js", {newLine: ";"}))
+  .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("server", function () {
@@ -109,10 +117,13 @@ gulp.task("refresh", function (done) {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "images",
+  "webp",
   "css",
   "sprite",
   "html",
-  "compress"
+  "jsmin",
+  "scripts"
   ));
 
 gulp.task("start", gulp.series(
