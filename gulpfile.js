@@ -15,6 +15,9 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var jsmin = require("gulp-jsmin");
+var uglify = require("gulp-uglify");
+var pipeline = require("readable-stream").pipeline;
+var minify = require('gulp-minify');
 var concat = require("gulp-concat");
 var del = require("del");
 
@@ -82,17 +85,16 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("jsmin", async function () {
-  gulp.src("source/js/**/*.js")
-      .pipe(jsmin())
-      .pipe(rename({suffix: ".min"}))
-      .pipe(gulp.dest("source/jsmin"));
+gulp.task("scripts", function () {
+  return gulp.src("source/js/*.js")
+  .pipe(concat("main.js"))
+  .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("scripts", function() {
-  return gulp.src("source/jsmin/**/*.js", "!source/jsmin/api.min.js")
-  .pipe(concat("main.js", {newLine: ";"}))
-  .pipe(gulp.dest("build/js"));
+gulp.task("jsmin", async function() {
+  gulp.src("build/js/main.js")
+    .pipe(minify())
+    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("server", function () {
@@ -122,8 +124,8 @@ gulp.task("build", gulp.series(
   "css",
   "sprite",
   "html",
-  "jsmin",
-  "scripts"
+  "scripts",
+  "jsmin"
   ));
 
 gulp.task("start", gulp.series(
