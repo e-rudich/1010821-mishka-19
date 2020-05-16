@@ -3,11 +3,11 @@
   margin-bottom: 25px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-size: 320px 6px;
+  background-size: auto 6px;
   background-position: 0 35px;
 
   @media (min-width: $width-tablet) {
-    background-size: 768px 15px;
+    background-size: auto 15px;
     background-position: 0 18px;
   }
 

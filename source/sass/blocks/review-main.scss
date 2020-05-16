@@ -39,11 +39,13 @@
     order: 1;
     flex-grow: 1;
     margin-bottom: 32px;
+    width: 73%;
   }
 
   @media (min-width: $width-desktop) {
     @include header-size-desktop;
     margin-left: 45px;
+    width: 76%;
   }
 }
 
@@ -78,6 +80,7 @@
 
   @media (min-width: $width-tablet) {
     margin-top: 58px;
+    width: 70%;
   }
 
   @media (min-width: $width-desktop) {

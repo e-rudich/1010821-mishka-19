@@ -135,6 +135,7 @@
   display: inline-block;
   padding: 10px 0 9px 0;
   border-bottom: 1px solid $border-color;
+  vertical-align: bottom;
 
   @media (min-width: $width-tablet) {
     padding: 10px 0 7px 0;
@@ -142,11 +143,11 @@
 }
 
 .item-main__field {
-  min-width: 96px;
+  width: 96px;
 }
 
 .item-main__value {
-  min-width: 160px;
+  width: 160px;
 }
 
 .item-main__img {
