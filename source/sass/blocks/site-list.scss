@@ -4,11 +4,13 @@
   @media (min-width: $width-tablet) {
     order: 3;
     padding-left: 20px;
+    max-width: 450px;
   }
 
   @media (min-width: $width-desktop) {
     order: 1;
     padding-left: 13px;
+    min-width: 500px;
   }
 }
 

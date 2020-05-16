@@ -120,6 +120,7 @@
 
   @media (min-width: $width-tablet) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
