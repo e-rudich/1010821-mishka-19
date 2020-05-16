@@ -152,10 +152,12 @@
   color: $text-color;
   padding-bottom: 3px;
   box-shadow: 0 1px 0 0 $main-green-dark-hover;
+  transition: 0.35s;
 
   &:hover,
   &:focus {
     color: $main-green-dark-hover;
+    transition: 0.35s;
   }
 
   &:active {

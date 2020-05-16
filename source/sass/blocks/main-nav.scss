@@ -35,6 +35,7 @@
   &:hover .main-nav__logo-image,
   &:focus .main-nav__logo-image {
     opacity: 0.6;
+    transition: 0.35s;
   }
 
   &:active .main-nav__logo-image {

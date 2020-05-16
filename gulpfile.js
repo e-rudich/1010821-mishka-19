@@ -17,6 +17,7 @@ var include = require("posthtml-include");
 var minify = require('gulp-minify');
 var concat = require("gulp-concat");
 var del = require("del");
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -48,6 +49,7 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 });
 

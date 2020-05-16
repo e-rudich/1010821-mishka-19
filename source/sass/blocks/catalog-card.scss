@@ -5,6 +5,7 @@
   &:hover .card-content__wrapper,
   &:focus .card-content__wrapper {
     box-shadow: 0 6px 10px 0 $black-10;
+    transition: 0.35s;
   }
 
   &:active .card-content__wrapper {
