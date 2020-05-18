@@ -12,8 +12,8 @@
   z-index: 100;
 
   @media (min-width: $width-tablet) {
-    max-width: 566px;
-    left: calc(50% - 208px);
+    min-width: 566px;
+    left: calc(50% - 283px);
   }
 }
 

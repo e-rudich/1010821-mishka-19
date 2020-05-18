@@ -54,7 +54,7 @@
   }
 }
 
-.main-nav__menu-opened {
+.main-nav__menu {
   border: none;
   background-color: transparent;
   width: 75px;
@@ -62,7 +62,9 @@
   position: absolute;
   top: 0;
   right: 0;
+}
 
+.main-nav__menu--opened {
   &::before {
     content: "";
     position: absolute;
@@ -79,12 +81,7 @@
   }
 }
 
-.main-nav__menu-closed {
-  border: none;
-  background-color: transparent;
-  width: 75px;
-  height: 40px;
-  position: absolute;
+.main-nav__menu--closed {
   top: 6px;
   right: 2px;
 
@@ -142,7 +139,7 @@
   }
 }
 
-.main-nav__menu-toggle--no-js {
+.main-nav__menu--no-js {
   @media (max-width: $mobile-width-only) {
     display: none;
   }

@@ -20,7 +20,7 @@
   @include fieldset-reset;
 }
 
-.form__filedset--bg {
+.form__fieldset--bg {
   @media (min-width: $width-tablet) {
     background-color: $grey-light;
   }
