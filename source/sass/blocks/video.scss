@@ -2,6 +2,7 @@
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px 0 $black-10;
+    transition: 0.35s;
   }
 
   &:active {
@@ -144,5 +145,6 @@
   @media (min-width: $width-desktop) {
     width: 230px;
     margin: 0;
+    margin-bottom: 20px;
   }
 }

@@ -26,7 +26,7 @@ if (map) {
       }),
 
       myMap.geoObjects.add(myPlacemark);
-      map.behaviors.disable('multiTouch');
-      map.behaviors.disable('scrollZoom');
+      map.behaviors.disable("multiTouch");
+      map.behaviors.disable("scrollZoom");
   });
 }

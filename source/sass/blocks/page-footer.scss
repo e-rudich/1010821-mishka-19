@@ -20,6 +20,7 @@
   &:hover,
   &:focus {
     fill: $main-green-dark-hover;
+    transition: 0.35s;
   }
 
   &:active {
@@ -31,6 +32,7 @@
     width: 102px;
     height: 34px;
     margin-right: 83px;
+    transition: 0.35s;
   }
 }
 
@@ -43,6 +45,7 @@
   line-height: 18px;
   font-weight: bold;
   padding: 15px;
+  transition: 0.35s;
 
   &:active {
     color: $black-30;
@@ -51,10 +54,12 @@
   &:hover > .page-footer__copyright-logo,
   &:focus > .page-footer__copyright-logo {
     fill: $main-green-dark-hover;
+    transition: 0.35s;
   }
 
   &:active > .page-footer__copyright-logo {
     fill: $main-green-dark-hover-30;
+    transition: 0.35s;
   }
 
   @media (min-width: $width-tablet) {
@@ -68,4 +73,5 @@
   height: 34px;
   padding-left: 30px;
   fill: $main-green;
+  transition: 0.35s;
 }
