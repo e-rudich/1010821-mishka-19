@@ -85,6 +85,7 @@
   padding-right: 8px;
   padding-left: 8px;
   padding-top: 3px;
+  pointer-events: none;
 
   @media (min-width: $width-tablet) {
     padding-right: 3px;

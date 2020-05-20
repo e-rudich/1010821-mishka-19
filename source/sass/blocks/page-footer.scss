@@ -36,6 +36,10 @@
   }
 }
 
+.page-footer__logo-image {
+  pointer-events: none;
+}
+
 .page-footer__copyright-link {
   @include link-reset;
   display: flex;
@@ -74,4 +78,5 @@
   padding-left: 30px;
   fill: $main-green;
   transition: 0.35s;
+  pointer-events: none;
 }

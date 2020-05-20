@@ -26,6 +26,10 @@
   height: 100%;
   transition: 0.35s;
 
+  & svg {
+    pointer-events: none;
+  }
+
   &:hover svg,
   &:focus svg {
     fill: $main-green-dark-hover;

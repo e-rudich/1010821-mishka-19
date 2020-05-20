@@ -81,6 +81,7 @@
 
 .user-list__icon {
   position: absolute;
+  pointer-events: none;
   top: calc(50% - 7px);
   left: 0;
   fill: $black;
